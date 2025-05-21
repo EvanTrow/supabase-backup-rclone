@@ -59,6 +59,7 @@ This project provides a Dockerized solution for automated backups of a Supabase 
 -   `CRON_SCHEDULE` (optional): Cron schedule for backups (default: `0 2 * * *` - daily at 2:00 AM)
 -   `SUPABASE_DB_URI` (required): PostgreSQL connection string.
 -   `RCLONE_REMOTE` (required): rclone remote destination (e.g., `remote:/supabase_backups`)
+-   `DELETE_OLDER_THAN_X` (optional): Delete backups older than set time period. Default is seconds but other suffixes are avialble: ms|s|m|h|d|w|M|y
 
 ## File Structure
 
